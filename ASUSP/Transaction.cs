@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CsvHelper;
 
 namespace ASUSP
 {
@@ -10,15 +11,16 @@ namespace ASUSP
 
     class Transaction
     {
-        int ID { get; set; }
-        DateTime startDate { get; set; }
-        DateTime expiryDate { get; set; }
-        int productType { get; set; }
-        int productCode { get; set; }
-        string country { get; set; }
-        string city { get; set; }
-        string firm { get; set; }
-        Cell cell { get; set; }
+        public int ID { get; set; }
+        public DateTime startDate { get; set; }
+        public DateTime expiryDate { get; set; }
+        public int productType { get; set; }
+        public int productCode { get; set; }
+        public string country { get; set; }
+        public string city { get; set; }
+        public string firm { get; set; }
+        public Cell cell { get; set; }
+        public bool status = false;
         public Transaction(int startYear, int startMonth, int startDate, int expityYear, int expityMonth, int expityDate, 
             ProductTypes type, int code, string country, string city, string firm, Cell cell)
         {
@@ -31,6 +33,10 @@ namespace ASUSP
             this.firm = firm;
             this.cell = cell;
             //this.ID = GetID();
+        }
+        public Transaction()
+        {
+
         }
 
         private int GetID()
