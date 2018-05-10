@@ -11,25 +11,6 @@ namespace ASUSP
     class DataConvert
     {
         static string path = "Base.csv";
-        public static void WriteToCSV(Transaction transaction)
-        {
-            var csv = new StringBuilder();
-            var number = transaction.ID.ToString();
-            var start = transaction.startDate.ToString();
-            var end = transaction.expiryDate.ToString();
-            var type = transaction.productType.ToString();
-            var code = transaction.productCode.ToString();
-            var country = transaction.country.ToString();
-            var city = transaction.city.ToString();
-            var firm = transaction.firm.ToString();
-            var cell = transaction.cell.ToString();
-            var status = transaction.status.ToString();
-            var newLine = string.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8},{9}", 
-                number, start, end, type, code, country, city, firm, cell, status);
-            csv.Append(newLine);
-            File.WriteAllText(path, csv.ToString());
-        }
-
         public static void WriteToCSV(List<Transaction> transactions)
         {
             var csv = new StringBuilder();
