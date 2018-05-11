@@ -25,9 +25,7 @@ namespace ASUSP
             InitializeComponent();
             Logic.Data = DataConvert.ReadFromCSV();
             Logic.StartLine = 0;
-            line1_1.Text = Convert.ToString(Logic.Data[0].productCode);
-            line1_2.Text = Convert.ToString(Logic.Data[0].startDate);
-            line1_3.Text = Convert.ToString(Logic.Data[0].expiryDate);
+            UpdateVisualization();
             //Transaction test = new Transaction(2012, 12, 21, 2017, 05, 21, ProductTypes.Common, 4277,
             //    "Russia", "Moscow", "MPF", new Cell());
             //List<Transaction> TestList = new List<Transaction>();
@@ -54,6 +52,84 @@ namespace ASUSP
             Logic.Data.Add(newTransaction);
             DataConvert.WriteToCSV(Logic.Data);
             MessageBox.Show("Успех");
+            UpdateVisualization();
+        }
+
+        private void UpButton_Click(object sender, RoutedEventArgs e)
+        {
+            if(Logic.StartLine>0)
+            Logic.StartLine--;
+            UpdateVisualization();
+        }
+
+        private void DownButton_Click(object sender, RoutedEventArgs e)
+        {
+            Logic.StartLine++;
+            UpdateVisualization();
+        }
+
+        protected void UpdateVisualization()
+        {
+            if (Logic.Data.Count - Logic.StartLine - 0 > 0)
+            {
+                line1_1.Text = Convert.ToString(Logic.Data[Logic.StartLine].productCode);
+                line1_2.Text = Convert.ToString(Logic.Data[Logic.StartLine].startDate);
+                line1_3.Text = Convert.ToString(Logic.Data[Logic.StartLine].expiryDate);
+            }
+            else
+            {
+                line1_1.Text = "";
+                line1_2.Text = "";
+                line1_3.Text = "";
+            }
+            if (Logic.Data.Count - Logic.StartLine - 1 > 0)
+            {
+                line2_1.Text = Convert.ToString(Logic.Data[Logic.StartLine + 1].productCode);
+                line2_2.Text = Convert.ToString(Logic.Data[Logic.StartLine + 1].startDate);
+                line2_3.Text = Convert.ToString(Logic.Data[Logic.StartLine + 1].expiryDate);
+            }
+            else
+            {
+                line2_1.Text = "";
+                line2_2.Text = "";
+                line2_3.Text = "";
+            }
+            if (Logic.Data.Count - Logic.StartLine - 2 > 0)
+            {
+                line3_1.Text = Convert.ToString(Logic.Data[Logic.StartLine + 2].productCode);
+                line3_2.Text = Convert.ToString(Logic.Data[Logic.StartLine + 2].startDate);
+                line3_3.Text = Convert.ToString(Logic.Data[Logic.StartLine + 2].expiryDate);
+            }
+            else
+            {
+                line3_1.Text = "";
+                line3_2.Text = "";
+                line3_3.Text = "";
+            }
+            if (Logic.Data.Count - Logic.StartLine - 3 > 0)
+            {
+                line4_1.Text = Convert.ToString(Logic.Data[Logic.StartLine + 3].productCode);
+                line4_2.Text = Convert.ToString(Logic.Data[Logic.StartLine + 3].startDate);
+                line4_3.Text = Convert.ToString(Logic.Data[Logic.StartLine + 3].expiryDate);
+            }
+            else
+            {
+                line4_1.Text = "";
+                line4_2.Text = "";
+                line4_3.Text = "";
+            }
+            if (Logic.Data.Count - Logic.StartLine - 4 > 0)
+            {
+                line5_1.Text = Convert.ToString(Logic.Data[Logic.StartLine + 4].productCode);
+                line5_2.Text = Convert.ToString(Logic.Data[Logic.StartLine + 4].startDate);
+                line5_3.Text = Convert.ToString(Logic.Data[Logic.StartLine + 4].expiryDate);
+            }
+            else
+            {
+                line5_1.Text = "";
+                line5_2.Text = "";
+                line5_3.Text = "";
+            }
         }
     }
 }

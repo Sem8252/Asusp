@@ -59,7 +59,9 @@
     </ApplicationDefinition>
     <Compile Include="Cell.cs" />
     <Compile Include="Logic.cs" />
+    <Compile Include="Navigation.cs" />
     <Compile Include="Transaction.cs" />
+    <Compile Include="Transporter.cs" />
     <Page Include="DataWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
