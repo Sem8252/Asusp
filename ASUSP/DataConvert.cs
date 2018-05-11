@@ -13,7 +13,8 @@ namespace ASUSP
         static string path = "Base.csv";
         public static void WriteToCSV(List<Transaction> transactions)
         {
-            var csv = new StringBuilder();
+            //var csv = new StringBuilder();
+            List<string> lines = new List<string>();
             foreach (Transaction current in transactions)
             {
                 var number = current.ID.ToString();
@@ -28,14 +29,15 @@ namespace ASUSP
                 var status = current.status.ToString();
                 var newLine = string.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8},{9}",
                 number, start, end, type, code, country, city, firm, cell, status);
-                csv.Append(newLine);
+                //csv.Append(newLine);
+                lines.Add(newLine);
             }
-            File.WriteAllText(path, csv.ToString());
+            File.WriteAllLines(path, lines);
         }
 
         public static List<Transaction> ReadFromCSV()
         {
-            var lines = File.ReadAllText(path);
+            var lines = File.ReadAllLines(path);
             var list = new List<Transaction>();
             foreach (var line in lines)
             {
@@ -54,8 +56,8 @@ namespace ASUSP
                 list.Add(transaction);
             }
             
-            List<Transaction> transactions = new List<Transaction>();   
-            return transactions;
+            //List<Transaction> transactions = new List<Transaction>();   
+            return list;
         }
     }
 }

@@ -58,6 +58,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Cell.cs" />
+    <Compile Include="Logic.cs" />
     <Compile Include="Transaction.cs" />
     <Page Include="DataWindow.xaml">
       <SubType>Designer</SubType>

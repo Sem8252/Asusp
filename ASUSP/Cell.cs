@@ -27,6 +27,13 @@ namespace ASUSP
         public Cell()
         { }
 
+        public Cell(int type, int size, string id)
+        {
+            this.type = type;
+            this.size = size;
+            this.ID = id;
+        }
+
         public string ConvertToString()
         {
             var Type = Convert.ToString(this.type);

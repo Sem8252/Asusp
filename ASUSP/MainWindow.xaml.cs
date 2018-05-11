@@ -23,13 +23,22 @@ namespace ASUSP
         public MainWindow()
         {
             InitializeComponent();
+            Logic.Data = DataConvert.ReadFromCSV();
+            Logic.StartLine = 0;
+            line1_1.Text = Convert.ToString(Logic.Data[0].productCode);
+            line1_2.Text = Convert.ToString(Logic.Data[0].startDate);
+            line1_3.Text = Convert.ToString(Logic.Data[0].expiryDate);
+            //Transaction test = new Transaction(2012, 12, 21, 2017, 05, 21, ProductTypes.Common, 4277,
+            //    "Russia", "Moscow", "MPF", new Cell());
+            //List<Transaction> TestList = new List<Transaction>();
+            //TestList.Add(test);
+            //DataConvert.WriteToCSV(TestList);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             DataWindow DataStorage = new DataWindow();
             DataStorage.Show();
-            
         }
 
         private void OpenMap_Click(object sender, RoutedEventArgs e)
@@ -40,7 +49,11 @@ namespace ASUSP
 
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
-            //Transaction newTransaction = new Transaction();
+            Transaction newTransaction = Logic.AddFromScreen(StartDateBox.Text, ExpDateBox.Text, TypeBox.SelectedIndex, CodeBox.Text,
+                CountryBox.Text, CityBox.Text, FirmBox.Text, CellTypeBox.SelectedIndex);
+            Logic.Data.Add(newTransaction);
+            DataConvert.WriteToCSV(Logic.Data);
+            MessageBox.Show("Успех");
         }
     }
 }
