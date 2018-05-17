@@ -22,6 +22,7 @@ namespace ASUSP
         public MapWindow()
         {
             InitializeComponent();
+            
         }
     }
 }

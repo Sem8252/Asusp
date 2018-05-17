@@ -26,11 +26,18 @@ namespace ASUSP
             Logic.Data = DataConvert.ReadFromCSV();
             Logic.StartLine = 0;
             UpdateVisualization();
-            //Transaction test = new Transaction(2012, 12, 21, 2017, 05, 21, ProductTypes.Common, 4277,
-            //    "Russia", "Moscow", "MPF", new Cell());
-            //List<Transaction> TestList = new List<Transaction>();
-            //TestList.Add(test);
-            //DataConvert.WriteToCSV(TestList);
+            //MapSquare mapSquare = new MapSquare();
+            //MapSquare[,] map = new MapSquare[10, 10];
+            //for (int j = 0; j < 10; j++)
+            //{
+            //    for (int i = 0; i < 10; i++)
+            //    {
+            //        map[i, j] = new MapSquare(i, j, true);
+            //    }
+            //}
+            //Map.MapToCSV(map);
+            var map = Map.MapFromCSV();
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
