@@ -26,7 +26,7 @@ namespace ASUSP
         {
             this.startDate = new DateTime(startYear, startMonth, startDate);
             this.expiryDate = new DateTime(expityYear, expityMonth, expityDate);
-            this.productType = (int)type;
+            this.productType = (int)type;  //Какого хрена?
             this.productCode = code;
             this.country = country;
             this.city = city;

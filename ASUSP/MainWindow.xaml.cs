@@ -37,7 +37,6 @@ namespace ASUSP
             //}
             //Map.MapToCSV(map);
             var map = Map.MapFromCSV();
-
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
