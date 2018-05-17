@@ -5,8 +5,61 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ASUSP"
         mc:Ignorable="d"
-        Title="DataWindow" Height="317.442" Width="333.14">
+        Title="DataWindow" Height="307" Width="970">
     <Grid>
-        <DataGrid HorizontalAlignment="Left" Height="286" VerticalAlignment="Top" Width="325"/>
+        <TextBox x:Name="box1_1" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="10,41,0,0"/>
+        <TextBox x:Name="box1_2" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="135,41,0,0"/>
+        <TextBox x:Name="box1_3" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="260,41,0,0"/>
+        <TextBox x:Name="box1_4" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="385,41,0,0"/>
+        <TextBox x:Name="box1_5" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="510,41,0,0"/>
+        <TextBox x:Name="box1_6" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="635,41,0,0"/>
+        <TextBox x:Name="box1_7" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="760,41,0,0"/>
+        <TextBox x:Name="box2_1" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="10,81,0,0"/>
+        <TextBox x:Name="box2_2" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="135,81,0,0"/>
+        <TextBox x:Name="box2_3" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="260,81,0,0"/>
+        <TextBox x:Name="box2_4" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="385,81,0,0"/>
+        <TextBox x:Name="box2_5" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="510,81,0,0"/>
+        <TextBox x:Name="box2_6" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="635,81,0,0"/>
+        <TextBox x:Name="box2_7" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="760,81,0,0"/>
+        <TextBox x:Name="box3_1" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="10,121,0,0"/>
+        <TextBox x:Name="box3_2" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="135,121,0,0"/>
+        <TextBox x:Name="box3_3" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="260,121,0,0"/>
+        <TextBox x:Name="box3_4" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="385,121,0,0"/>
+        <TextBox x:Name="box3_5" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="510,121,0,0"/>
+        <TextBox x:Name="box3_6" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="635,121,0,0"/>
+        <TextBox x:Name="box3_7" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="760,121,0,0"/>
+        <TextBox x:Name="box4_1" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="10,161,0,0"/>
+        <TextBox x:Name="box4_2" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="135,161,0,0"/>
+        <TextBox x:Name="box4_3" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="260,161,0,0"/>
+        <TextBox x:Name="box4_4" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="385,161,0,0"/>
+        <TextBox x:Name="box4_5" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="510,161,0,0"/>
+        <TextBox x:Name="box4_6" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="635,161,0,0"/>
+        <TextBox x:Name="box4_7" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="760,161,0,0"/>
+        <TextBox x:Name="box5_1" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="10,201,0,0"/>
+        <TextBox x:Name="box5_2" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="135,201,0,0"/>
+        <TextBox x:Name="box5_3" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="260,201,0,0"/>
+        <TextBox x:Name="box5_4" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="385,201,0,0"/>
+        <TextBox x:Name="box5_5" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="510,201,0,0"/>
+        <TextBox x:Name="box5_6" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="635,201,0,0"/>
+        <TextBox x:Name="box5_7" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="760,201,0,0"/>
+        <Label Content="Код продукта" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="14,10,0,0"/>
+        <Label Content="Дата начала хранения" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,10,0,0"/>
+        <Label Content="Дата окончания хранения" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="255,10,0,0"/>
+        <Label Content="Страна" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="409,10,0,0"/>
+        <Label Content="Город" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="510,10,0,0"/>
+        <Label Content="Фирма" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="635,10,0,0"/>
+        <Label Content="Статус" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="760,10,0,0"/>
+        <Button Content="►" HorizontalAlignment="Left" Margin="885,46,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
+        <Button x:Name="Delete1" Content="X" HorizontalAlignment="Left" Margin="920,46,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Delete1_Click"/>
+        <Button Content="►" HorizontalAlignment="Left" Margin="885,86,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
+        <Button x:Name="Delete2" Content="X" HorizontalAlignment="Left" Margin="920,86,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Delete2_Click"/>
+        <Button Content="►" HorizontalAlignment="Left" Margin="885,126,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
+        <Button x:Name="Delete3" Content="X" HorizontalAlignment="Left" Margin="920,126,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Delete3_Click"/>
+        <Button Content="►" HorizontalAlignment="Left" Margin="885,166,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
+        <Button x:Name="Delete4" Content="X" HorizontalAlignment="Left" Margin="920,166,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Delete4_Click"/>
+        <Button Content="►" HorizontalAlignment="Left" Margin="885,206,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
+        <Button x:Name="Delete5" Content="X" HorizontalAlignment="Left" Margin="920,206,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Delete5_Click"/>
+        <Button x:Name="UpButtonData" Content="↑" HorizontalAlignment="Left" Margin="815,241,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="UpButtonData_Click"/>
+        <Button x:Name="DownButtonData" Content="↓" HorizontalAlignment="Left" Margin="850,241,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="DownButtonData_Click"/>
     </Grid>
 </Window>

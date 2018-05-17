@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ASUSP"
         mc:Ignorable="d"
-        Title="MainWindow" Height="480" Width="800">
+        Title="MainWindow" Height="480" Width="810">
     <Grid>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="116" Margin="10,323,0,0" Stroke="Black" VerticalAlignment="Top" Width="772"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="116" Margin="10,323,0,0" Stroke="Black" VerticalAlignment="Top" Width="782"/>
 
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="308" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="383"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="308" Margin="398,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="384"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="308" Margin="398,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="394"/>
         <ComboBox x:Name="TypeBox" HorizontalAlignment="Left" Margin="140,353,0,0" VerticalAlignment="Top" Width="120">
             <ComboBoxItem Content="Общее"/>
             <ComboBoxItem Content="Техника"/>
@@ -26,9 +26,8 @@
             <ComboBoxItem Content="Заморозка"/>
             <ComboBoxItem Content="Специальная"/>
         </ComboBox>
-        <Button x:Name="AddButton" Content="Добавить транзакцию" HorizontalAlignment="Left" Margin="649,327,0,0" VerticalAlignment="Top" Width="128" Height="101" Click="AddButton_Click"/>
+        <Button x:Name="AddButton" Content="Добавить транзакцию" HorizontalAlignment="Left" Margin="649,327,0,0" VerticalAlignment="Top" Width="134" Height="101" Click="AddButton_Click"/>
         <DataGrid HorizontalAlignment="Left" Height="308" Margin="10,10,0,0" VerticalAlignment="Top" Width="383"/>
-        <DataGrid HorizontalAlignment="Left" Height="308" Margin="398,10,0,0" VerticalAlignment="Top" Width="384"/>
         <Button x:Name="OpenDS" Content="" HorizontalAlignment="Left" Margin="356,15,0,0" VerticalAlignment="Top" Click="Button_Click" Width="30" Height="30" RenderTransformOrigin="0.894,0.5"/>
         <Button x:Name="OpenMap" Content="" HorizontalAlignment="Left" Margin="747,15,0,0" VerticalAlignment="Top" Click="OpenMap_Click" Width="30" Height="30"/>
         <TextBox x:Name="CityBox" HorizontalAlignment="Left" Height="24" Margin="391,351,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
@@ -57,6 +56,21 @@
         <Label Content="Город" HorizontalAlignment="Left" Margin="391,327,0,0" VerticalAlignment="Top"/>
         <Label Content="Фирма" HorizontalAlignment="Left" Margin="266,380,0,0" VerticalAlignment="Top"/>
         <Label Content="Тип ячейки" HorizontalAlignment="Left" Margin="391,380,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="35" Margin="413,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="35" Margin="538,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="35" Margin="663,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="35" Margin="413,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="35" Margin="538,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="35" Margin="663,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="35" Margin="413,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="35" Margin="538,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="35" Margin="663,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="35" Margin="413,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="35" Margin="538,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="35" Margin="663,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="35" Margin="413,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="35" Margin="538,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="35" Margin="663,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
