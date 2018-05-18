@@ -53,11 +53,19 @@ namespace ASUSP
 
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
-            Transaction newTransaction = Logic.AddFromScreen(StartDateBox.Text, ExpDateBox.Text, TypeBox.SelectedIndex, CodeBox.Text,
-                CountryBox.Text, CityBox.Text, FirmBox.Text, CellTypeBox.SelectedIndex);
-            Logic.Data.Add(newTransaction);
-            DataConvert.WriteToCSV(Logic.Data);
-            MessageBox.Show("Успех");
+            try
+            {
+                Transaction newTransaction = Logic.AddFromScreen(StartDateBox.Text, ExpDateBox.Text, TypeBox.SelectedIndex, CodeBox.Text,
+                    CountryBox.Text, CityBox.Text, FirmBox.Text, CellTypeBox.SelectedIndex);
+                Logic.Data.Add(newTransaction);
+                DataConvert.WriteToCSV(Logic.Data);
+                MessageBox.Show("Успех");
+                error.Content="";
+            }
+            catch
+            {
+                error.Content = "Введите корректные данные";
+            }
             UpdateVisualization();
         }
 

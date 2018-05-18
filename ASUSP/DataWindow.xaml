@@ -49,15 +49,15 @@
         <Label Content="Город" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="510,10,0,0"/>
         <Label Content="Фирма" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="635,10,0,0"/>
         <Label Content="Статус" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="760,10,0,0"/>
-        <Button Content="►" HorizontalAlignment="Left" Margin="885,46,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
+        <Button x:Name="Add1" Content="►" HorizontalAlignment="Left" Margin="885,46,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Add1_Click"/>
         <Button x:Name="Delete1" Content="X" HorizontalAlignment="Left" Margin="920,46,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Delete1_Click"/>
-        <Button Content="►" HorizontalAlignment="Left" Margin="885,86,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
+        <Button x:Name="Add2" Content="►" HorizontalAlignment="Left" Margin="885,86,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Add2_Click"/>
         <Button x:Name="Delete2" Content="X" HorizontalAlignment="Left" Margin="920,86,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Delete2_Click"/>
-        <Button Content="►" HorizontalAlignment="Left" Margin="885,126,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
+        <Button x:Name="Add3" Content="►" HorizontalAlignment="Left" Margin="885,126,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Add3_Click"/>
         <Button x:Name="Delete3" Content="X" HorizontalAlignment="Left" Margin="920,126,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Delete3_Click"/>
-        <Button Content="►" HorizontalAlignment="Left" Margin="885,166,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
+        <Button x:Name="Add4" Content="►" HorizontalAlignment="Left" Margin="885,166,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Add4_Click"/>
         <Button x:Name="Delete4" Content="X" HorizontalAlignment="Left" Margin="920,166,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Delete4_Click"/>
-        <Button Content="►" HorizontalAlignment="Left" Margin="885,206,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
+        <Button x:Name="Add5" Content="►" HorizontalAlignment="Left" Margin="885,206,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Add5_Click"/>
         <Button x:Name="Delete5" Content="X" HorizontalAlignment="Left" Margin="920,206,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Delete5_Click"/>
         <Button x:Name="UpButtonData" Content="↑" HorizontalAlignment="Left" Margin="815,241,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="UpButtonData_Click"/>
         <Button x:Name="DownButtonData" Content="↓" HorizontalAlignment="Left" Margin="850,241,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="DownButtonData_Click"/>

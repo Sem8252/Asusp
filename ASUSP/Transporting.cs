@@ -11,9 +11,10 @@ namespace ASUSP
 
     class Transporter
     {
-        int x;
-        int y;
-        bool isWaiting;
+        public readonly string name;
+        public int x;
+        public int y;
+        public bool isReady;
     }
 
     class Map

@@ -192,5 +192,55 @@ namespace ASUSP
                 DataConvert.WriteToCSV(Logic.Data);
             }
         }
+
+        private void Add1_Click(object sender, RoutedEventArgs e)
+        {
+            if (Logic.Data.Count - Logic.StartLine - 0 > 0 && Logic.Data[Logic.StartLine].status != true)
+            {
+                Logic.Data[Logic.StartLine].status = true;
+                Navigation.transactionOrder.Enqueue(Logic.Data[Logic.StartLine]);
+                UpdateVisualization();
+            }
+        }
+
+        private void Add2_Click(object sender, RoutedEventArgs e)
+        {
+            if (Logic.Data.Count - Logic.StartLine - 1 > 0 && Logic.Data[Logic.StartLine + 1].status != true)
+            {
+                Logic.Data[Logic.StartLine+1].status = true;
+                Navigation.transactionOrder.Enqueue(Logic.Data[Logic.StartLine+1]);
+                UpdateVisualization();
+            }
+        }
+
+        private void Add3_Click(object sender, RoutedEventArgs e)
+        {
+            if (Logic.Data.Count - Logic.StartLine - 2 > 0 && Logic.Data[Logic.StartLine + 2].status != true)
+            {
+                Logic.Data[Logic.StartLine+2].status = true;
+                Navigation.transactionOrder.Enqueue(Logic.Data[Logic.StartLine+2]);
+                UpdateVisualization();
+            }
+        }
+
+        private void Add4_Click(object sender, RoutedEventArgs e)
+        {
+            if (Logic.Data.Count - Logic.StartLine - 3 > 0 && Logic.Data[Logic.StartLine + 3].status != true)
+            {
+                Logic.Data[Logic.StartLine+3].status = true;
+                Navigation.transactionOrder.Enqueue(Logic.Data[Logic.StartLine+3]);
+                UpdateVisualization();
+            }
+        }
+
+        private void Add5_Click(object sender, RoutedEventArgs e)
+        {
+            if (Logic.Data.Count - Logic.StartLine - 4 > 0 && Logic.Data[Logic.StartLine + 4].status != true)
+            {
+                Logic.Data[Logic.StartLine+4].status = true;
+                Navigation.transactionOrder.Enqueue(Logic.Data[Logic.StartLine+4]);
+                UpdateVisualization();
+            }
+        }
     }
 }
